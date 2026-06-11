@@ -1,0 +1,89 @@
+/* Reset some default styles */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bangers&family=Bungee&family=Geologica:wght@100..900&family=Honk&family=Indie+Flower&family=Jersey+20&family=Koulen&family=Mitr:wght@200;300;400;500;600;700&family=Orbitron:wght@400..900&family=Patrick+Hand&family=Patua+One&family=Permanent+Marker&family=Poiret+One&family=Protest+Riot&family=Protest+Strike&family=Righteous&family=Rowdies:wght@300;400;700&family=Silkscreen:wght@400;700&family=Sixtyfour&family=Sriracha&family=Viga&display=swap');
+
+body {
+    font-family: "Viga", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #474056;
+    color: #ffffff;
+    scroll-behavior: smooth; /* Adiciona rolagem suave */
+}
+
+.body-opened {
+    overflow: hidden;
+}
+
+/* Styling for the header section */
+header {
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+/* Styling for the circular header image */
+.header-image {
+    margin-top: 60px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+/* GIF background layer */
+.header-gif-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Dark overlay above GIF so text remains readable */
+.header-bg {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.social-icons {
+    padding-bottom: 20px;
+}
+
+
+/* Styling for social icons */
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+    /* Styling for social icon images */
+    .social-icon img {
+        margin-top: -10px;
+        width: 38px;
+        height: 38px;
+    }
+
+.parallax {
+    /* Static background removed – now using animated GIF via .header-gif-bg */
+}
+
+
+@media only screen and (min-width: 2400px) {
+
+    .header-image {
+        margin-top: 100px;
+        width: 220px;
+        height: auto;
+    }
+  
+}
+
